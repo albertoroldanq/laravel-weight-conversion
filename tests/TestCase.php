@@ -2,9 +2,9 @@
 
 namespace Albertoroldanq\WeightConversion\Tests;
 
+use Albertoroldanq\WeightConversion\WeightConversionServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Albertoroldanq\WeightConversion\WeightConversionServiceProvider;
 
 class TestCase extends Orchestra
 {
