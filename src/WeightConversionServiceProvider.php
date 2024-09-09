@@ -2,9 +2,9 @@
 
 namespace Albertoroldanq\WeightConversion;
 
+use Albertoroldanq\WeightConversion\Commands\WeightConversionCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Albertoroldanq\WeightConversion\Commands\WeightConversionCommand;
 
 class WeightConversionServiceProvider extends PackageServiceProvider
 {
@@ -19,7 +19,7 @@ class WeightConversionServiceProvider extends PackageServiceProvider
             ->name('laravel-weight-conversion')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_laravel_weight_conversion_table')
+            ->hasMigration('create_weight_conversion_table')
             ->hasCommand(WeightConversionCommand::class);
     }
 }

@@ -10,3 +10,7 @@ testbench.yaml
 vendor
 node_modules
 configure.php
+.env
+docker-compose.yml
+docker-compose
+Dockerfile

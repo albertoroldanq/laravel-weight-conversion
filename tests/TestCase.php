@@ -2,9 +2,10 @@
 
 namespace Albertoroldanq\WeightConversion\Tests;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use Albertoroldanq\WeightConversion\WeightConversionServiceProvider;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\Schema;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
@@ -26,11 +27,10 @@ class TestCase extends Orchestra
 
     public function getEnvironmentSetUp($app)
     {
+        Schema::dropAllTables();
         config()->set('database.default', 'testing');
 
-        /*
-        $migration = include __DIR__.'/../database/migrations/create_laravel-weight-conversion_table.php.stub';
+        $migration = include __DIR__.'/../database/migrations/create_weight_conversion_table.php';
         $migration->up();
-        */
     }
 }
