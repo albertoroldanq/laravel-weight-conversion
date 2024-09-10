@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 
 class WeightConversionCommand extends Command
 {
-    public $signature = 'laravel-weight-conversion';
+    public $signature = 'my-command';
 
     public $description = 'My command';
 

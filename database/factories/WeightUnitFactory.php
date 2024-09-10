@@ -2,7 +2,7 @@
 
 namespace Albertoroldanq\WeightConversion\Database\Factories;
 
-use Albertoroldanq\WeightConversion\WeightUnit;
+use Albertoroldanq\WeightConversion\Models\WeightUnit;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class WeightUnitFactory extends Factory
