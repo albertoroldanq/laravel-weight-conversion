@@ -17,7 +17,7 @@ class WeightConversionServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-weight-conversion')
-            ->hasConfigFile()
+            ->hasConfigFile('weight-conversion')
             ->hasViews()
             ->hasMigration('create_weight_conversion_table')
             ->hasCommand(WeightConversionCommand::class);

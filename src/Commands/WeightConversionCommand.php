@@ -12,7 +12,8 @@ class WeightConversionCommand extends Command
 
     public function handle(): int
     {
-        $this->comment('All done');
+        $text = config('weight-conversion.command_output');
+        $this->comment($text);
 
         return self::SUCCESS;
     }
