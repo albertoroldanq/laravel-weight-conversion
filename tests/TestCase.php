@@ -4,7 +4,6 @@ namespace Albertoroldanq\WeightConversion\Tests;
 
 use Albertoroldanq\WeightConversion\WeightConversionServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Schema;
 use Orchestra\Testbench\TestCase as Orchestra;
 

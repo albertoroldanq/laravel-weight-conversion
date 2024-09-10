@@ -27,14 +27,14 @@ class WeightConversionServiceProvider extends PackageServiceProvider
 
     public function packageRegistered()
     {
-        Route::macro('weightConversion', function(string $baseUrl = 'weight-conversion') {
-            Route::prefix($baseUrl)->group(function() {
+        Route::macro('weightConversion', function (string $baseUrl = 'weight-conversion') {
+            Route::prefix($baseUrl)->group(function () {
                 Route::get('/', [MyController::class, 'index']);
             });
         });
     }
 
     // in the project
-//    Route::weightConversion(); // /weight-conversion
-//    Route::weightConversion('custom-route'); // /custom-route
+    //    Route::weightConversion(); // /weight-conversion
+    //    Route::weightConversion('custom-route'); // /custom-route
 }
